@@ -1,0 +1,27 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicG9yemEiLCJpYXQiOjE2MTQ3OTA4MDksImV4cCI6MTYxNDc5MDgyNH0.jZFa3sXq_xUOqBR1oGg7vWjBXL6BxybOJmJcAdWN5f4
+
+####
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token" :"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicG9yemEiLCJpYXQiOjE2MTQ3OTEyNDZ9.kvZ-2gZvpjpzqLFw7Y-xGfXpGl5A6jIYhNfKJ26Mehw"
+}
+
+
+####
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token" :"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicG9yemEiLCJpYXQiOjE2MTQ3OTEyNDZ9.kvZ-2gZvpjpzqLFw7Y-xGfXpGl5A6jIYhNfKJ26Mehw"
+}
+
+####
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "porza"
+}
